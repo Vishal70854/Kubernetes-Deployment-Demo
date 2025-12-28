@@ -34,7 +34,7 @@ docker build -t <image_name>:<tag> .
 
 -- After the above command, docker image will be build in k8s cluster(via docker) which will only be available in k8s docker, not in local docker desktop deamon
 
-### Create Deployment object with Docker image
+### Create Deployment object with Docker image from command line terminal
 
 ## Create deployment
 kubectl create deployment <mention name of your deployment> -image=<image_name>:<tag> --port=8080
