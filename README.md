@@ -23,6 +23,11 @@ minikube docker-env
 -- After the above command paste the last command from the output in the same console
 -- and minikube will be connected with its own docker deamon and
 -- now we will be able to use Kubernetes docker and build images inside k8s cluster
+```
+ex: copy and paste below in terminal/powershell
+        & minikube -p minikube docker-env --shell powershell | Invoke-Expression
+```
+-- After pasting the above command now your minikube is configured with minikube's internal docker-deamon
 
 # build images of docker by going to the path of Dockerfile of your project
 docker build -t <image_name>:<tag> .
